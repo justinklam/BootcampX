@@ -9,8 +9,7 @@ const pool = new Pool({
 
 // Store all user terminal input into variables
 const cohortName = process.argv[2];
-const values = [cohortName];
-// const values = [`%${cohortName}%`];
+const values = [`${cohortName}`];
 
 const queryString = `
 SELECT DISTINCT teachers.name AS teacher, cohorts.name AS cohort
